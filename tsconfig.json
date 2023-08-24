@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* Type */
+    "declaration": true,
+    "declarationMap": true,
+    "typeRoots": ["node_modules/@types", "src/index.d.ts"],
+
+    /* Path aliases */
+    "baseUrl": ".",
+    "paths": {
+      "xtensions": ["src/index.ts"]
+    }
+  },
+  "include": ["src", "test"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
